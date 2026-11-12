@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jose Ramiro Malang — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            bgMain: '#05070B',
+            bgCard: '#0A0D14',
+            accentBlue: '#0055FF',
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="top" class="bg-bgMain text-white font-sans antialiased selection:bg-accentBlue selection:text-white">
+
+  <header class="sticky top-0 z-50 bg-[#05070B]/90 backdrop-blur-md border-b border-white/[0.06]">
+    <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-3 group">
+        <span class="w-8 h-8 rounded-md bg-accentBlue flex items-center justify-center font-mono font-semibold text-xs text-white tracking-wider">
+          JM
+        </span>
+        <span class="font-mono text-xs tracking-[0.2em] text-slate-300 group-hover:text-white transition-colors duration-200 uppercase">
+          Jose Ramiro Malang
+        </span>
+      </a>
+
+      <ul class="hidden md:flex items-center gap-7 text-xs font-medium text-slate-400">
+        <li><a href="#home" class="hover:text-white transition-colors duration-200">Home</a></li>
+        <li><a href="#about" class="hover:text-white transition-colors duration-200">About</a></li>
+        <li><a href="#education" class="hover:text-white transition-colors duration-200">Education</a></li>
+        <li><a href="#experience" class="hover:text-white transition-colors duration-200">Experience</a></li>
+        <li><a href="#achievements" class="hover:text-white transition-colors duration-200">Achievements</a></li>
+        <li><a href="#skills" class="hover:text-white transition-colors duration-200">Skills</a></li>
+        <li><a href="#contact" class="hover:text-white transition-colors duration-200">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="bg-grid-pattern border-b border-white/[0.06]">
+    <div class="max-w-6xl mx-auto px-6 py-20 md:py-28 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <div class="lg:col-span-7 space-y-6">
+        <div class="flex items-center gap-3 font-mono text-[11px] tracking-[0.2em] text-blue-400 uppercase">
+          <span class="w-6 h-[1px] bg-blue-500"></span>
+          <span>Portfolio — 2026</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white">
+          Jose Ramiro Malang
+        </h1>
+
+        <p class="text-lg sm:text-xl font-medium text-sky-400">
+          IT Support &amp; Systems Developer
+        </p>
+
+        <p class="text-slate-400 text-sm sm:text-base leading-relaxed max-w-xl">
+          Detail-oriented Computer Science student with a strong track record of academic excellence and hands-on technical execution. Experienced in independent freelance IT support, custom PC hardware diagnostics, system deployment, and data-driven development with Python, SQL, and MongoDB.
+        </p>
+
+        <div class="pt-2 flex flex-wrap items-center gap-4">
+          <a href="#contact" class="group inline-flex items-center gap-2 bg-accentBlue hover:bg-accentBlue/80 text-white text-xs sm:text-sm font-medium px-5 py-3 rounded-md transition-all duration-200">
+            <span>Contact Me</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1"></i>
+          </a>
+
+          <a href="#experience" class="inline-flex items-center justify-center bg-[#0A0D14] border border-blue-500/50 hover:border-slate-500 text-slate-200 text-xs sm:text-sm font-medium px-6 py-3 rounded-md transition-colors duration-200">
+            View Work
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 flex flex-col items-center lg:items-end">
+        <div class="w-full max-w-sm">
+          <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-[#0D131F] border border-white/10 shadow-2xl">
+            <img 
+              src="assets/portrait.jpg" 
+              onerror="this.onerror=null; this.src='https://placehold.co/600x750/0D131F/38BDF8?text=portrait.jpg';" 
+              alt="Jose Ramiro Malang Portrait" 
+              class="w-full h-full object-cover object-top"
+            />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about" class="py-20 md:py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-3xl space-y-6">
+        <div class="flex items-center gap-3 font-mono text-[11px] tracking-[0.2em] uppercase">
+          <span class="text-blue-500">[01]</span>
+          <span class="w-6 h-[1px] bg-slate-700"></span>
+          <span class="text-slate-400">About</span>
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+          About Me
+        </h2>
+
+        <div class="space-y-4 text-slate-400 text-sm sm:text-base leading-relaxed">
+          <p>
+            I'm a Computer Science student based in Bacoor City, Cavite with a strong academic track record and a practical background in systems development, hardware diagnostics, and technical client support.
+          </p>
+          <p>
+            Through my independent freelance IT support work, I handle end-to-end hardware lifecycle management from planning and assembling custom desktop systems with optimal thermal efficiency to executing clean OS deployments, runtime configurations, and NVMe storage migrations.
+          </p>
+          <p>
+            On the software side, I work with Python, MySQL, and MongoDB to build reliable backend logic and structured data workflows, combining hardware-level understanding with clean, maintainable code.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="py-16 md:py-24 border-b border-white/[0.06]">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="space-y-4 mb-12">
+        <div class="flex items-center gap-3 font-mono text-[11px] tracking-[0.2em] uppercase">
+          <span class="text-blue-500">[02]</span>
+          <span class="w-6 h-[1px] bg-slate-700"></span>
+          <span class="text-slate-400">Education</span>
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+          Education Journey
+        </h2>
+      </div>
+
+      <div class="relative border-l border-slate-800 ml-2.5 space-y-10 max-w-3xl">
+        
+        <div class="relative pl-8">
+          <span class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-bgMain border-2 border-blue-500"></span>
+          <p class="font-mono text-xs text-blue-400 tracking-wider mb-1">2024 – PRESENT</p>
+          <h3 class="text-lg font-semibold text-white">Bachelor of Science in Computer Science</h3>
+          <p class="text-sm text-slate-300 mt-0.5">Cavite State University — Bacoor Campus</p>
+          <p class="text-sm text-slate-400 mt-2 leading-relaxed">
+            Currently entering 3rd Year with consistent Excellent Academic Standing across all completed semesters. Focused on software engineering, database systems, and algorithmic problem solving.
+          </p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="font-mono text-[11px] px-2.5 py-1 rounded bg-[#0A0D14] border border-blue-500/25 text-slate-300">1st Yr 1st Sem: <strong class="text-blue-400 font-semibold">1.54</strong></span>
+            <span class="font-mono text-[11px] px-2.5 py-1 rounded bg-[#0A0D14] border border-blue-500/25 text-slate-300">1st Yr 2nd Sem: <strong class="text-blue-400 font-semibold">1.53</strong></span>
+            <span class="font-mono text-[11px] px-2.5 py-1 rounded bg-[#0A0D14] border border-blue-500/25 text-slate-300">2nd Yr 1st Sem: <strong class="text-blue-400 font-semibold">1.48</strong></span>
+            <span class="font-mono text-[11px] px-2.5 py-1 rounded bg-[#0A0D14] border border-blue-500/25 text-slate-300">2nd Yr 2nd Sem: <strong class="text-blue-400 font-semibold">1.58</strong></span>
+          </div>
+        </div>
+
+        <div class="relative pl-8">
+          <span class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-bgMain border-2 border-blue-500"></span>
+          <p class="font-mono text-xs text-blue-400 tracking-wider mb-1">2022 – 2024</p>
+          <h3 class="text-lg font-semibold text-white">Senior High School — STEM Strand</h3>
+          <p class="text-sm text-slate-300 mt-0.5">University of Perpetual Help System DALTA — Molino</p>
+          <p class="text-sm text-slate-400 mt-2 leading-relaxed">
+            Senior High School STEM Graduate (2024). Built foundational analytical skills in mathematics, computing fundamentals, and technical research.
+          </p>
+        </div>
+
+        <div class="relative pl-8">
+          <span class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-bgMain border-2 border-blue-500"></span>
+          <p class="font-mono text-xs text-blue-400 tracking-wider mb-1">2018 – 2022</p>
+          <h3 class="text-lg font-semibold text-white">Junior High School</h3>
+          <p class="text-sm text-slate-300 mt-0.5">City of Bacoor National Highschool — Springville</p>
+          <p class="text-sm text-slate-400 mt-2 leading-relaxed">
+            Junior High School Graduate (2022). Developed early interest in computer hardware assembly, troubleshooting, and digital literacy.
+          </p>
+        </div>
+
+        <div class="relative pl-8">
+          <span class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-bgMain border-2 border-blue-500"></span>
+          <p class="font-mono text-xs text-blue-400 tracking-wider mb-1">2012 – 2018</p>
+          <h3 class="text-lg font-semibold text-white">Primary Education</h3>
+          <p class="text-sm text-slate-300 mt-0.5">Molino Elementary School</p>
+          <p class="text-sm text-slate-400 mt-2 leading-relaxed">
+            Elementary Graduate (2018).
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="bg-grid-pattern py-20 md:py-24 border-b border-white/[0.06]">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div class="space-y-4">
+          <div class="flex items-center gap-3 font-mono text-[11px] tracking-[0.2em] uppercase">
+            <span class="text-blue-500">[03]</span>
+            <span class="w-6 h-[1px] bg-slate-700"></span>
+            <span class="text-slate-400">Freelance</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+            Freelance Experience
+          </h2>
+        </div>
+
+        <p class="text-slate-400 text-sm max-w-md">
+          Independent IT Support Technician &amp; PC Builder — end-to-end hardware, OS deployment, and diagnostics engagements for individual clients.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+        
+        <figure class="bg-[#080B12]/90 border border-white/[0.08] rounded-xl p-4 relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-10 h-[2px] bg-blue-500"></div>
+          <div class="aspect-[4/5] w-full rounded-lg overflow-hidden bg-[#0D131F]">
+            <img 
+              src="assets/freelance-pc-build.jpg" 
+              onerror="this.onerror=null; this.src='https://placehold.co/600x750/0D1526/38BDF8?text=freelance-pc-build.jpg';" 
+              alt="Custom Desktop PC Assembly" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <figcaption class="mt-3.5 flex items-center justify-between px-1">
+            <span class="text-xs font-medium text-slate-200">Custom Client PC Assembly</span>
+            <span class="font-mono text-[10px] tracking-wider text-blue-400 uppercase">Hardware Build</span>
+          </figcaption>
+        </figure>
+
+        <figure class="bg-[#080B12]/90 border border-white/[0.08] rounded-xl p-4 relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-10 h-[2px] bg-blue-500"></div>
+          <div class="aspect-[4/5] w-full rounded-lg overflow-hidden bg-[#0D131F]">
+            <img 
+              src="assets/freelance-gpu-repaste.jpg" 
+              onerror="this.onerror=null; this.src='https://placehold.co/600x750/0D1526/38BDF8?text=freelance-gpu-repaste.jpg';" 
+              alt="GPU Thermal Pad Replacement and Repasting" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <figcaption class="mt-3.5 flex items-center justify-between px-1">
+            <span class="text-xs font-medium text-slate-200">GPU Thermal Pad &amp; Die Repaste</span>
+            <span class="font-mono text-[10px] tracking-wider text-blue-400 uppercase">Thermal Service</span>
+          </figcaption>
+        </figure>
+
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <div class="bg-[#080B12]/90 border border-white/[0.08] rounded-xl p-7 flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-10 h-[2px] bg-blue-500"></div>
+          <div>
+            <h3 class="text-lg font-semibold text-white">Hardware Lifecycle Management</h3>
+            <p class="text-xs text-slate-400 mt-0.5">Freelance PC Builder &amp; Systems Planner</p>
+            <p class="text-sm text-slate-400 mt-4 leading-relaxed">
+              Planned and assembled custom desktop systems tailored to client workloads, ensuring strict component compatibility, balanced airflow, and optimal thermal efficiency.
+            </p>
+          </div>
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span class="font-mono text-[10px] tracking-wider px-2.5 py-1 rounded bg-white/[0.03] border border-white/[0.08] text-slate-400 uppercase">Custom PC Builds</span>
+            <span class="font-mono text-[10px] tracking-wider px-2.5 py-1 rounded bg-white/[0.03] border border-white/[0.08] text-slate-400 uppercase">Airflow Design</span>
+            <span class="font-mono text-[10px] tracking-wider px-2.5 py-1 rounded bg-white/[0.03] border border-white/[0.08] text-slate-400 uppercase">Hardware Planning</span>
+          </div>
+        </div>
+
+        <div class="bg-[#080B12]/90 border border-white/[0.08] rounded-xl p-7 flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-10 h-[2px] bg-blue-500"></div>
+          <div>
+            <h3 class="text-lg font-semibold text-white">System Deployment &amp; Optimization</h3>
+            <p class="text-xs text-slate-400 mt-0.5">OS Configuration &amp; Runtime Specialist</p>
+            <p class="text-sm text-slate-400 mt-4 leading-relaxed">
+              Executed clean Windows 10 and Windows 11 installations configured with essential runtime environments including .NET Framework, VC Redistributables, Java, and verified device drivers.
+            </p>
+          </div>
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span class="font-mono text-[10px] tracking-wider px-2.5 py-1 rounded bg-white/[0.03] border border-white/[0.08] text-slate-400 uppercase">Windows 10/11</span>
+            <span class="font-mono text-[10px] tracking-wider px-2.5 py-1 rounded bg-white/[0.03] border border-white/[0.08] text-slate-400 uppercase">.NET / VC++</span>
+            <span class="font-mono text-[10px] tracking-wider px-2.5 py-1 rounded bg-white/[0.03] border border-white/[0.08] text-slate-400 uppercase">Driver Tuning</span>
+          </div>
+        </div>
+
+        <div class="bg-[#080B12]/90 border border-white/[0.08] rounded-xl p-7 flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-10 h-[2px] bg-blue-500"></div>
+          <div>
+            <h3 class="text-lg font-semibold text-white">Storage &amp; Data Migration</h3>
+            <p class="text-xs text-slate-400 mt-0.5">Drive Cloning &amp; Upgrade Technician</p>
+            <p class="text-sm text-slate-400 mt-4 leading-relaxed">
+              Performed storage hardware transitions from legacy HDDs to SATA SSD and NVMe M.2 drives, executing zero-loss drive cloning and full OS migrations while preserving client files.
+            </p>
+          </div>
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span class="font-mono text-[10px] tracking-wider px-2.5 py-1 rounded bg-white/[0.03] border border-white/[0.08] text-slate-400 uppercase">NVMe M.2</span>
+            <span class="font-mono text-[10px] tracking-wider px-2.5 py-1 rounded bg-white/[0.03] border border-white/[0.08] text-slate-400 uppercase">Drive Cloning</span>
+            <span class="font-mono text-[10px] tracking-wider px-2.5 py-1 rounded bg-white/[0.03] border border-white/[0.08] text-slate-400 uppercase">OS Migration</span>
+          </div>
+        </div>
+
+        <div class="bg-[#080B12]/90 border border-white/[0.08] rounded-xl p-7 flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-10 h-[2px] bg-blue-500"></div>
+          <div>
+            <h3 class="text-lg font-semibold text-white">Preventive System Maintenance</h3>
+            <p class="text-xs text-slate-400 mt-0.5">Thermal Optimization &amp; Diagnostics</p>
+            <p class="text-sm text-slate-400 mt-4 leading-relaxed">
+              Conducted deep hardware cleaning, thermal paste reapplication, diagnostics, and component upgrades (RAM, GPU, Storage) across both laptop and desktop platforms.
+            </p>
+          </div>
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span class="font-mono text-[10px] tracking-wider px-2.5 py-1 rounded bg-white/[0.03] border border-white/[0.08] text-slate-400 uppercase">Thermal Repasting</span>
+            <span class="font-mono text-[10px] tracking-wider px-2.5 py-1 rounded bg-white/[0.03] border border-white/[0.08] text-slate-400 uppercase">Diagnostics</span>
+            <span class="font-mono text-[10px] tracking-wider px-2.5 py-1 rounded bg-white/[0.03] border border-white/[0.08] text-slate-400 uppercase">Desktop &amp; Laptop</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="py-20 md:py-24 border-b border-white/[0.06]">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="space-y-4 mb-12">
+        <div class="flex items-center gap-3 font-mono text-[11px] tracking-[0.2em] uppercase">
+          <span class="text-blue-500">[04]</span>
+          <span class="w-6 h-[1px] bg-slate-700"></span>
+          <span class="text-slate-400">Achievements</span>
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+          Achievements &amp; Certificates
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <article class="achievement-card group bg-[#0A0D14] border border-white/[0.08] rounded-xl">
+          <div class="h-48 w-full overflow-hidden bg-[#0D131F]">
+            <img 
+              src="assets/cert-1.jpg" 
+              onerror="this.onerror=null; this.src='https://placehold.co/600x400/0D1526/38BDF8?text=cert-1.jpg';" 
+              alt="Dean's List Academic Recognition" 
+              class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            />
+          </div>
+          <div class="p-6 transition-transform duration-300 ease-out group-hover:-translate-y-1">
+            <p class="font-mono text-[11px] text-blue-400 tracking-wider uppercase mb-1.5">2024 – 2026</p>
+            <h3 class="text-base font-semibold text-white">Consistent Academic Excellence</h3>
+            <p class="text-xs text-slate-400 mt-1">CvSU Bacoor — Semestral GPAs: 1.54 • 1.53 • 1.48 • 1.58</p>
+          </div>
+        </article>
+
+        <article class="achievement-card group bg-[#0A0D14] border border-white/[0.08] rounded-xl">
+          <div class="h-48 w-full overflow-hidden bg-[#0D131F]">
+            <img 
+              src="assets/cert-2.jpg" 
+              onerror="this.onerror=null; this.src='https://placehold.co/600x400/0D1526/38BDF8?text=cert-2.jpg';" 
+              alt="Data Analysis & Databases" 
+              class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            />
+          </div>
+          <div class="p-6 transition-transform duration-300 ease-out group-hover:-translate-y-1">
+            <p class="font-mono text-[11px] text-blue-400 tracking-wider uppercase mb-1.5">2025</p>
+            <h3 class="text-base font-semibold text-white">Data Analysis &amp; Database Systems</h3>
+            <p class="text-xs text-slate-400 mt-1">Python, MySQL &amp; MongoDB Certification</p>
+          </div>
+        </article>
+
+        <article class="achievement-card group bg-[#0A0D14] border border-white/[0.08] rounded-xl">
+          <div class="h-48 w-full overflow-hidden bg-[#0D131F]">
+            <img 
+              src="assets/cert-3.jpg" 
+              onerror="this.onerror=null; this.src='https://placehold.co/600x400/0D1526/38BDF8?text=cert-3.jpg';" 
+              alt="Senior High School STEM Graduate" 
+              class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            />
+          </div>
+          <div class="p-6 transition-transform duration-300 ease-out group-hover:-translate-y-1">
+            <p class="font-mono text-[11px] text-blue-400 tracking-wider uppercase mb-1.5">2024</p>
+            <h3 class="text-base font-semibold text-white">STEM Strand Completion</h3>
+            <p class="text-xs text-slate-400 mt-1">University of Perpetual Help System DALTA</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-20 md:py-24 border-b border-white/[0.06]">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="space-y-4 mb-12">
+        <div class="flex items-center gap-3 font-mono text-[11px] tracking-[0.2em] uppercase">
+          <span class="text-blue-500">[05]</span>
+          <span class="w-6 h-[1px] bg-slate-700"></span>
+          <span class="text-slate-400">Skills</span>
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+          Programming Languages &amp; Tech Stack
+        </h2>
+
+        <p class="text-slate-400 text-sm max-w-xl">
+          Core languages, database technologies, and hardware/systems expertise.
+        </p>
+      </div>
+
+      <div class="space-y-10">
+        
+        <div>
+          <h3 class="font-mono text-[11px] tracking-[0.2em] text-slate-400 uppercase mb-4">
+            Languages &amp; Databases
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-[#0A0D14] border border-cyan-500/25 hover:border-blue-700 rounded-lg p-5 transition-colors duration-200">
+              <div class="flex items-center justify-between text-sm font-medium mb-3">
+                <span class="text-white">Python</span>
+                <span class="font-mono text-xs text-slate-400">90%</span>
+              </div>
+              <div class="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+                <div class="h-full bg-accentBlue rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="bg-[#0A0D14] border border-cyan-500/25 hover:border-blue-700 rounded-lg p-5 transition-colors duration-200">
+              <div class="flex items-center justify-between text-sm font-medium mb-3">
+                <span class="text-white">MySQL</span>
+                <span class="font-mono text-xs text-slate-400">95%</span>
+              </div>
+              <div class="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+                <div class="h-full bg-accentBlue rounded-full" style="width: 95%"></div>
+              </div>
+            </div>
+
+            <div class="bg-[#0A0D14] border border-cyan-500/25 hover:border-blue-700 rounded-lg p-5 transition-colors duration-200">
+              <div class="flex items-center justify-between text-sm font-medium mb-3">
+                <span class="text-white">MongoDB</span>
+                <span class="font-mono text-xs text-slate-400">100%</span>
+              </div>
+              <div class="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+                <div class="h-full bg-accentBlue rounded-full" style="width: 100%"></div>
+              </div>
+            </div>
+
+            <div class="bg-[#0A0D14] border border-cyan-500/25 hover:border-blue-700 rounded-lg p-5 transition-colors duration-200">
+              <div class="flex items-center justify-between text-sm font-medium mb-3">
+                <span class="text-white">HTML / CSS / JS</span>
+                <span class="font-mono text-xs text-slate-400">86%</span>
+              </div>
+              <div class="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+                <div class="h-full bg-accentBlue rounded-full" style="width: 86%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-mono text-[11px] tracking-[0.2em] text-slate-400 uppercase mb-4">
+            Hardware &amp; Systems Engineering
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-[#0A0D14] border border-cyan-500/25 hover:border-blue-700 rounded-lg p-5 transition-colors duration-200">
+              <div class="flex items-center justify-between text-sm font-medium mb-3">
+                <span class="text-white">PC Assembly</span>
+                <span class="font-mono text-xs text-slate-400">100%</span>
+              </div>
+              <div class="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+                <div class="h-full bg-accentBlue rounded-full" style="width: 100%"></div>
+              </div>
+            </div>
+
+            <div class="bg-[#0A0D14] border border-cyan-500/25 hover:border-blue-700 rounded-lg p-5 transition-colors duration-200">
+              <div class="flex items-center justify-between text-sm font-medium mb-3">
+                <span class="text-white">OS Deployment</span>
+                <span class="font-mono text-xs text-slate-400">100%</span>
+              </div>
+              <div class="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+                <div class="h-full bg-accentBlue rounded-full" style="width: 100%"></div>
+              </div>
+            </div>
+
+            <div class="bg-[#0A0D14] border border-cyan-500/25 hover:border-blue-700 rounded-lg p-5 transition-colors duration-200">
+              <div class="flex items-center justify-between text-sm font-medium mb-3">
+                <span class="text-white">Data Migration</span>
+                <span class="font-mono text-xs text-slate-400">90%</span>
+              </div>
+              <div class="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+                <div class="h-full bg-accentBlue rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="bg-[#0A0D14] border border-cyan-500/25 hover:border-blue-700 rounded-lg p-5 transition-colors duration-200">
+              <div class="flex items-center justify-between text-sm font-medium mb-3">
+                <span class="text-white">Thermal Tuning</span>
+                <span class="font-mono text-xs text-slate-400">95%</span>
+              </div>
+              <div class="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+                <div class="h-full bg-accentBlue rounded-full" style="width: 95%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 md:py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="space-y-4 mb-12">
+        <div class="flex items-center gap-3 font-mono text-[11px] tracking-[0.2em] uppercase">
+          <span class="text-blue-500">[06]</span>
+          <span class="w-6 h-[1px] bg-slate-700"></span>
+          <span class="text-slate-400">Contact</span>
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+          Get in Touch
+        </h2>
+
+        <p class="text-slate-400 text-sm max-w-xl">
+          Open to freelance IT support, PC building, systems development, and collaborative opportunities.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <div class="lg:col-span-5 space-y-4">
+          
+          <a href="mailto:jramiro.dev@gmail.com" class="flex items-center gap-4 p-3.5 rounded-lg border border-transparent hover:border-blue-500 transition-colors duration-200">
+            <div class="w-10 h-10 rounded-lg bg-[#0D1526] border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <p class="font-mono text-[10px] tracking-[0.18em] text-slate-400 uppercase">Email //</p>
+              <p class="text-sm font-medium text-white mt-0.5">jramiro.dev@gmail.com</p>
+            </div>
+          </a>
+
+          <a href="tel:+639687045355" class="flex items-center gap-4 p-3.5 rounded-lg border border-transparent hover:border-blue-500 transition-colors duration-200">
+            <div class="w-10 h-10 rounded-lg bg-[#0D1526] border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0">
+              <i data-lucide="phone" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <p class="font-mono text-[10px] tracking-[0.18em] text-slate-400 uppercase">Phone //</p>
+              <p class="text-sm font-medium text-white mt-0.5">+63 968 704 5355</p>
+            </div>
+          </a>
+
+          <div class="flex items-start gap-4 p-3.5 rounded-lg">
+            <div class="w-10 h-10 rounded-lg bg-[#0D1526] border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0 mt-0.5">
+              <i data-lucide="map-pin" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <p class="font-mono text-[10px] tracking-[0.18em] text-slate-400 uppercase">Address //</p>
+              <p class="text-sm font-medium text-white mt-0.5 leading-relaxed">
+                L15, B38, Tindalo St, PH3 Central Camella Springville, Molino 3, Bacoor City, Cavite 4102
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="lg:col-span-7 bg-[#080B12] border border-white/[0.08] rounded-xl p-6 sm:p-8">
+          <form id="contactForm" class="space-y-5">
+            <div>
+              <label for="fullName" class="block font-mono text-[10px] tracking-[0.18em] text-slate-400 uppercase mb-2">
+                Full Name
+              </label>
+              <input 
+                type="text" 
+                id="fullName" 
+                required
+                placeholder="Your name" 
+                class="w-full bg-[#05070B] border border-white/10 focus:border-blue-500 focus:outline-none rounded-md px-4 py-3 text-sm text-white placeholder-slate-600 transition-colors"
+              />
+            </div>
+
+            <div>
+              <label for="emailAddress" class="block font-mono text-[10px] tracking-[0.18em] text-slate-400 uppercase mb-2">
+                Email Address
+              </label>
+              <input 
+                type="email" 
+                id="emailAddress" 
+                required
+                placeholder="you@example.com" 
+                class="w-full bg-[#05070B] border border-white/10 focus:border-blue-500 focus:outline-none rounded-md px-4 py-3 text-sm text-white placeholder-slate-600 transition-colors"
+              />
+            </div>
+
+            <div>
+              <label for="message" class="block font-mono text-[10px] tracking-[0.18em] text-slate-400 uppercase mb-2">
+                Message
+              </label>
+              <textarea 
+                id="message" 
+                rows="4" 
+                required
+                placeholder="Tell me about your project, PC build, or inquiry..." 
+                class="w-full bg-[#05070B] border border-white/10 focus:border-blue-500 focus:outline-none rounded-md px-4 py-3 text-sm text-white placeholder-slate-600 transition-colors resize-y"
+              ></textarea>
+            </div>
+
+            <button 
+              type="submit" 
+              class="group w-full bg-accentBlue hover:bg-blue-700 text-white font-medium text-sm py-3.5 px-6 rounded-md inline-flex items-center justify-center gap-2 transition-colors duration-200 cursor-pointer"
+            >
+              <span>Send Message</span>
+              <i data-lucide="send" class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1"></i>
+            </button>
+
+            <p id="formNotice" class="text-center font-mono text-[10px] tracking-[0.15em] text-slate-500 uppercase pt-1"></p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/[0.06] py-8">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <p>&copy; 2026 Jose Ramiro Malang. All rights reserved.</p>
+      <a href="#top" class="font-mono text-[10px] tracking-[0.18em] text-slate-400 hover:text-white transition-colors uppercase">
+        Back to Top &uarr;
+      </a>
+    </div>
+  </footer>
+
+  <!-- Lucide Icons & Custom JS -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
+</body>
+</html>
